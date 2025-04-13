@@ -1,0 +1,506 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    
+    <!-- Navbar start here -->
+    <header class="text-gray-600 body-font py-4">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <nav class="flex lg:w-2/5 flex-wrap items-center text-base md:ml-auto">
+            <a class="mr-5 text-gray-900 text-sm font-bold uppercase hover:text-[#ff5d1d]">Home</a>
+            <a class="mr-5 text-gray-900 text-sm font-bold uppercase hover:text-[#ff5d1d]">Features</a>
+            <a class="mr-5 text-gray-900 text-sm font-bold uppercase hover:text-[#ff5d1d]">Shop</a>
+            <a class="mr-5 text-gray-900 text-sm font-bold uppercase hover:text-[#ff5d1d]">Pages</a>
+          </nav>
+          <a href="#" class="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-gray-900 lg:items-center lg:justify-center mb-4 md:mb-0">
+            <img src="/assets/images/logo.png" alt="logo">
+          </a>
+          <div class="lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0">
+            <nav class="flex lg:w-2/5 flex-wrap items-center text-base md:ml-auto">
+                <a class="mr-5 text-gray-900 text-sm font-bold uppercase hover:text-[#ff5d1d]">Eng</a>
+                <a class="mr-5 text-gray-900 text-sm font-bold uppercase hover:text-[#ff5d1d]">USD</a>
+                <a class="mr-5 text-gray-900 text-sm font-bold uppercase hover:text-[#ff5d1d]">Login</a>
+              </nav>
+          </div>
+        </div>
+      </header>
+    <!-- Navbar end here -->
+
+    <!-- Carousel start here -->
+    <div id="default-carousel" class="relative w-full" data-carousel="slide">
+        <!-- Carousel wrapper -->
+        <div class="relative h-185 overflow-hidden md:h-185">
+            <!-- Item 1 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="/assets/images/slider1.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="slier 1">
+            </div>
+            <!-- Item 2 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="/assets/images/slider2.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="slider 2">
+            </div>
+            <!-- Item 3 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="/assets/images/slider3.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="slider 3">
+            </div>
+        </div>
+        <!-- Slider indicators -->
+        <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+        </div>
+        <!-- Slider controls -->
+        <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                </svg>
+                <span class="sr-only">Previous</span>
+            </span>
+        </button>
+        <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                </svg>
+                <span class="sr-only">Next</span>
+            </span>
+        </button>
+        </div>
+        <!-- Carousel end here -->
+
+    
+        <!-- Slider start here -->
+        <section class="text-gray-600 body-font">
+            <div class="container px-5 py-24 mx-auto">
+              <div class="flex flex-wrap -m-4">
+
+                <div class="p-4 md:w-1/4 flex flex-col text-center items-center">
+                    <div class="inline-flex items-center justify-center text-indigo-500 mb-5 flex-shrink-0">
+                        <svg class="w-32 h-32 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M8.737 8.737a21.49 21.49 0 0 1 3.308-2.724m0 0c3.063-2.026 5.99-2.641 7.331-1.3 1.827 1.828.026 6.591-4.023 10.64-4.049 4.049-8.812 5.85-10.64 4.023-1.33-1.33-.736-4.218 1.249-7.253m6.083-6.11c-3.063-2.026-5.99-2.641-7.331-1.3-1.827 1.828-.026 6.591 4.023 10.64m3.308-9.34a21.497 21.497 0 0 1 3.308 2.724m2.775 3.386c1.985 3.035 2.579 5.923 1.248 7.253-1.336 1.337-4.245.732-7.295-1.275M14 12a2 2 0 1 1-4 0 2 2 0 0 1 4 0Z"/>
+                        </svg>     
+                    </div>
+                    <div class="flex-grow">
+                    <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Living Room</h2>
+                    </div>
+                </div>
+
+                <div class="p-4 md:w-1/4 flex flex-col text-center items-center">
+                    <div class="inline-flex items-center justify-center text-indigo-500 mb-5 flex-shrink-0">
+                        <svg class="w-32 h-32 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M11 9a1 1 0 1 1 2 0 1 1 0 0 1-2 0Z"/>
+                            <path fill-rule="evenodd" d="M9.896 3.051a2.681 2.681 0 0 1 4.208 0c.147.186.38.282.615.255a2.681 2.681 0 0 1 2.976 2.975.681.681 0 0 0 .254.615 2.681 2.681 0 0 1 0 4.208.682.682 0 0 0-.254.615 2.681 2.681 0 0 1-2.976 2.976.681.681 0 0 0-.615.254 2.682 2.682 0 0 1-4.208 0 .681.681 0 0 0-.614-.255 2.681 2.681 0 0 1-2.976-2.975.681.681 0 0 0-.255-.615 2.681 2.681 0 0 1 0-4.208.681.681 0 0 0 .255-.615 2.681 2.681 0 0 1 2.976-2.975.681.681 0 0 0 .614-.255ZM12 6a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z" clip-rule="evenodd"/>
+                            <path d="M5.395 15.055 4.07 19a1 1 0 0 0 1.264 1.267l1.95-.65 1.144 1.707A1 1 0 0 0 10.2 21.1l1.12-3.18a4.641 4.641 0 0 1-2.515-1.208 4.667 4.667 0 0 1-3.411-1.656Zm7.269 2.867 1.12 3.177a1 1 0 0 0 1.773.224l1.144-1.707 1.95.65A1 1 0 0 0 19.915 19l-1.32-3.93a4.667 4.667 0 0 1-3.4 1.642 4.643 4.643 0 0 1-2.53 1.21Z"/>
+                        </svg>      
+                    </div>
+                    <div class="flex-grow">
+                    <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Award</h2>
+                    </div>
+                </div>
+
+                <div class="p-4 md:w-1/4 flex flex-col text-center items-center">
+                    <div class="inline-flex items-center justify-center text-indigo-500 mb-5 flex-shrink-0">
+                        <svg class="w-32 h-32 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M8.737 8.737a21.49 21.49 0 0 1 3.308-2.724m0 0c3.063-2.026 5.99-2.641 7.331-1.3 1.827 1.828.026 6.591-4.023 10.64-4.049 4.049-8.812 5.85-10.64 4.023-1.33-1.33-.736-4.218 1.249-7.253m6.083-6.11c-3.063-2.026-5.99-2.641-7.331-1.3-1.827 1.828-.026 6.591 4.023 10.64m3.308-9.34a21.497 21.497 0 0 1 3.308 2.724m2.775 3.386c1.985 3.035 2.579 5.923 1.248 7.253-1.336 1.337-4.245.732-7.295-1.275M14 12a2 2 0 1 1-4 0 2 2 0 0 1 4 0Z"/>
+                        </svg>        
+                    </div>
+                    <div class="flex-grow">
+                    <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Living Room</h2>
+                    </div>
+                </div>
+
+                <div class="p-4 md:w-1/4 flex flex-col text-center items-center">
+                    <div class="inline-flex items-center justify-center text-indigo-500 mb-5 flex-shrink-0">
+                        <svg class="w-32 h-32 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M8.737 8.737a21.49 21.49 0 0 1 3.308-2.724m0 0c3.063-2.026 5.99-2.641 7.331-1.3 1.827 1.828.026 6.591-4.023 10.64-4.049 4.049-8.812 5.85-10.64 4.023-1.33-1.33-.736-4.218 1.249-7.253m6.083-6.11c-3.063-2.026-5.99-2.641-7.331-1.3-1.827 1.828-.026 6.591 4.023 10.64m3.308-9.34a21.497 21.497 0 0 1 3.308 2.724m2.775 3.386c1.985 3.035 2.579 5.923 1.248 7.253-1.336 1.337-4.245.732-7.295-1.275M14 12a2 2 0 1 1-4 0 2 2 0 0 1 4 0Z"/>
+                        </svg>       
+                    </div>
+                    <div class="flex-grow">
+                    <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Living Room</h2>
+                    </div>
+                </div>
+
+              </div>
+            </div>
+          </section>
+         <!-- Slider end here -->
+
+         <!-- New Arrivals Product Start Here -->
+         <section class="text-gray-600 body-font bg-gray-100">
+            <div class="container px-5 py-24 mx-auto">
+                <h1 class="text-center text-gray-900 font-bold text-4xl uppercase">New Arrivals</h1>
+                <p class="text-center text-gray-500 text-sm uppercase py-4">Shop the new selection of New Arrivals at our store. Fill out your wishlist item.</p>
+              <div class="flex flex-wrap -m-4">
+                <!-- Product 1 -->
+                <div class="xl:w-1/4 md:w-1/2 p-4">
+                    <div class="lg:w-1/4 md:w-1/2 p-4 w-full hover:bg-gray-200">
+                        <a href="#" target="_blank" class="block relative rounded overflow-hidden"><img alt="product1" class="object-cover object-center w-full h-full block rounded-lg dark:text-gray-100" src="/assets/images/product1.jpg"/></a>
+                        <div class="mt-4">
+                            <a href="#" target="_blank">
+                                <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Category 1</h3>
+                                <h2 class="text-gray-900 dark:text-gray-100 title-font text-lg font-medium">Product Name</h2>
+                                <span class="text-xl dark:text-gray-200">Tk. $50</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Product 2 -->
+                 <div class="xl:w-1/4 md:w-1/2 p-4">
+                    <div class="lg:w-1/4 md:w-1/2 p-4 w-full hover:bg-gray-200">
+                        <a href="#" target="_blank" class="block relative rounded overflow-hidden"><img alt="product1" class="object-cover object-center w-full h-full block rounded-lg dark:text-gray-100" src="/assets/images/product1.jpg"/></a>
+                        <div class="mt-4">
+                            <a href="#" target="_blank">
+                                <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Category 1</h3>
+                                <h2 class="text-gray-900 dark:text-gray-100 title-font text-lg font-medium">Product Name</h2>
+                                <span class="text-xl dark:text-gray-200">Tk. $50</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Product 3 -->
+                 <div class="xl:w-1/4 md:w-1/2 p-4">
+                    <div class="lg:w-1/4 md:w-1/2 p-4 w-full hover:bg-gray-200">
+                        <a href="#" target="_blank" class="block relative rounded overflow-hidden"><img alt="product1" class="object-cover object-center w-full h-full block rounded-lg dark:text-gray-100" src="/assets/images/product1.jpg"/></a>
+                        <div class="mt-4">
+                            <a href="#" target="_blank">
+                                <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Category 1</h3>
+                                <h2 class="text-gray-900 dark:text-gray-100 title-font text-lg font-medium">Product Name</h2>
+                                <span class="text-xl dark:text-gray-200">Tk. $50</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Product 4 -->
+                 <div class="xl:w-1/4 md:w-1/2 p-4">
+                    <div class="lg:w-1/4 md:w-1/2 p-4 w-full hover:bg-gray-200">
+                        <a href="#" target="_blank" class="block relative rounded overflow-hidden"><img alt="product1" class="object-cover object-center w-full h-full block rounded-lg dark:text-gray-100" src="/assets/images/product1.jpg"/></a>
+                        <div class="mt-4">
+                            <a href="#" target="_blank">
+                                <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Category 1</h3>
+                                <h2 class="text-gray-900 dark:text-gray-100 title-font text-lg font-medium">Product Name</h2>
+                                <span class="text-xl dark:text-gray-200">Tk. $50</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+         </section>
+         <!-- New Arrivals Product End Here -->
+
+         <!-- Top Popular Product Start Here -->
+         <section class="text-gray-600 body-font">
+            <div class="container px-5 py-24 mx-auto">
+                <h1 class="text-center text-gray-900 font-bold text-4xl uppercase">Top Populars</h1>
+                <p class="text-center text-gray-500 text-sm uppercase py-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+              <div class="flex flex-wrap -m-4">
+                <!-- Product 1 -->
+                <div class="xl:w-1/4 md:w-1/2 p-4">
+                    <div class="lg:w-1/4 md:w-1/2 p-4 w-full hover:bg-gray-200">
+                        <a href="#" target="_blank" class="block relative rounded overflow-hidden"><img alt="product1" class="object-cover object-center w-full h-full block rounded-lg dark:text-gray-100" src="/assets/images/product1.jpg"/></a>
+                        <div class="mt-4 mb-4">
+                            <a href="#" target="_blank">
+                                <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Category 1</h3>
+                                <h2 class="text-gray-900 dark:text-gray-100 title-font text-lg font-medium">Product Name</h2>
+                                <span class="text-xl dark:text-gray-200">Tk. $50</span>
+                            </a>
+                        </div>
+                        <button type="button" class="text-white bg-black hover:bg-[#ff5d1d] focus:ring-4 focus:ring-blue-300 font-medium text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Add To Cart</button>
+                    </div>
+                </div>
+
+                 <!-- Product 2 -->
+                 <div class="xl:w-1/4 md:w-1/2 p-4">
+                    <div class="lg:w-1/4 md:w-1/2 p-4 w-full hover:bg-gray-200">
+                        <a href="#" target="_blank" class="block relative rounded overflow-hidden"><img alt="product1" class="object-cover object-center w-full h-full block rounded-lg dark:text-gray-100" src="/assets/images/product1.jpg"/></a>
+                        <div class="mt-4 mb-4">
+                            <a href="#" target="_blank">
+                                <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Category 1</h3>
+                                <h2 class="text-gray-900 dark:text-gray-100 title-font text-lg font-medium">Product Name</h2>
+                                <span class="text-xl dark:text-gray-200">Tk. $50</span>
+                            </a>
+                        </div>
+                        <button type="button" class="text-white bg-black hover:bg-[#ff5d1d] focus:ring-4 focus:ring-blue-300 font-medium text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Add To Cart</button>
+                    </div>
+                </div>
+
+                 <!-- Product 3 -->
+                 <div class="xl:w-1/4 md:w-1/2 p-4">
+                    <div class="lg:w-1/4 md:w-1/2 p-4 w-full hover:bg-gray-200">
+                        <a href="#" target="_blank" class="block relative rounded overflow-hidden"><img alt="product1" class="object-cover object-center w-full h-full block rounded-lg dark:text-gray-100" src="/assets/images/product1.jpg"/></a>
+                        <div class="mt-4 mb-4">
+                            <a href="#" target="_blank">
+                                <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Category 1</h3>
+                                <h2 class="text-gray-900 dark:text-gray-100 title-font text-lg font-medium">Product Name</h2>
+                                <span class="text-xl dark:text-gray-200">Tk. $50</span>
+                            </a>
+                        </div>
+                        <button type="button" class="text-white bg-black hover:bg-[#ff5d1d] focus:ring-4 focus:ring-blue-300 font-medium text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Add To Cart</button>
+                    </div>
+                </div>
+
+                 <!-- Product 4 -->
+                 <div class="xl:w-1/4 md:w-1/2 p-4">
+                    <div class="lg:w-1/4 md:w-1/2 p-4 w-full hover:bg-gray-200">
+                        <a href="#" target="_blank" class="block relative rounded overflow-hidden"><img alt="product1" class="object-cover object-center w-full h-full block rounded-lg dark:text-gray-100" src="/assets/images/product1.jpg"/></a>
+                        <div class="mt-4 mb-4">
+                            <a href="#" target="_blank">
+                                <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Category 1</h3>
+                                <h2 class="text-gray-900 dark:text-gray-100 title-font text-lg font-medium">Product Name</h2>
+                                <span class="text-xl dark:text-gray-200">Tk. $50</span>
+                            </a>
+                        </div>
+                        <button type="button" class="text-white bg-black hover:bg-[#ff5d1d] focus:ring-4 focus:ring-blue-300 font-medium text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Add To Cart</button>
+                    </div>
+                </div>
+              </div>
+            </div>
+         </section>
+         <!-- Top Popular Product End Here -->
+
+         
+         <!-- Bestseller Product Start Here -->
+          <section class="text-gray-600 body-font">
+            <div class="container px-5 py-24 mx-auto">
+                <h1 class="text-center text-gray-900 font-bold text-4xl uppercase">Bestseller</h1>
+                <p class="text-center text-gray-500 text-sm uppercase py-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+
+                <div class="text-center py-8">
+                    <button type="button" class="text-white bg-black hover:bg-[#ff5d1d] focus:ring-4 focus:ring-blue-300 font-medium text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 uppercase">Decor</button>
+                    <button type="button" class="text-white bg-black hover:bg-[#ff5d1d] focus:ring-4 focus:ring-blue-300 font-medium text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 uppercase">Kitchen</button>
+                    <button type="button" class="text-white bg-black hover:bg-[#ff5d1d] focus:ring-4 focus:ring-blue-300 font-medium text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 uppercase">Living Room</button>
+                    <button type="button" class="text-white bg-black hover:bg-[#ff5d1d] focus:ring-4 focus:ring-blue-300 font-medium text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 uppercase">Sofa</button>
+                </div>
+
+              <div class="flex flex-wrap -m-4">
+                <!-- Product 1 -->
+                <div class="xl:w-1/4 md:w-1/2 p-4 hover:bg-gray-200">
+                    <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                        <a href="#" target="_blank" class="block relative rounded overflow-hidden"><img alt="product1" class="object-cover object-center w-full h-full block rounded-lg dark:text-gray-100" src="/assets/images/p1.jpg"/></a>
+                        <div class="mt-4 mb-4">
+                            <a href="#" target="_blank">
+                                <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Category 1</h3>
+                                <h2 class="text-gray-900 dark:text-gray-100 title-font text-lg font-medium">Product Name</h2>
+                                <span class="text-xl dark:text-gray-200">Tk. $50</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Product 2 -->
+                 <div class="xl:w-1/4 md:w-1/2 p-4">
+                    <div class="lg:w-1/4 md:w-1/2 p-4 w-full hover:bg-gray-200">
+                        <a href="#" target="_blank" class="block relative rounded overflow-hidden"><img alt="product1" class="object-cover object-center w-full h-full block rounded-lg dark:text-gray-100" src="/assets/images/p2.jpg"/></a>
+                        <div class="mt-4 mb-4">
+                            <a href="#" target="_blank">
+                                <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Category 1</h3>
+                                <h2 class="text-gray-900 dark:text-gray-100 title-font text-lg font-medium">Product Name</h2>
+                                <span class="text-xl dark:text-gray-200">Tk. $50</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Product 3 -->
+                 <div class="xl:w-1/4 md:w-1/2 p-4">
+                    <div class="lg:w-1/4 md:w-1/2 p-4 w-full hover:bg-gray-200">
+                        <a href="#" target="_blank" class="block relative rounded overflow-hidden"><img alt="product1" class="object-cover object-center w-full h-full block rounded-lg dark:text-gray-100" src="/assets/images/3.jpg"/></a>
+                        <div class="mt-4 mb-4">
+                            <a href="#" target="_blank">
+                                <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Category 1</h3>
+                                <h2 class="text-gray-900 dark:text-gray-100 title-font text-lg font-medium">Product Name</h2>
+                                <span class="text-xl dark:text-gray-200">Tk. $50</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Product 4 -->
+                 <div class="xl:w-1/4 md:w-1/2 p-4">
+                    <div class="lg:w-1/4 md:w-1/2 p-4 w-full hover:bg-gray-200">
+                        <a href="#" target="_blank" class="block relative rounded overflow-hidden"><img alt="product1" class="object-cover object-center w-full h-full block rounded-lg dark:text-gray-100" src="/assets/images/p4.jpg"/></a>
+                        <div class="mt-4 mb-4">
+                            <a href="#" target="_blank">
+                                <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Category 1</h3>
+                                <h2 class="text-gray-900 dark:text-gray-100 title-font text-lg font-medium">Product Name</h2>
+                                <span class="text-xl dark:text-gray-200">Tk. $50</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Product 5 -->
+                 <div class="xl:w-1/4 md:w-1/2 p-4">
+                    <div class="lg:w-1/4 md:w-1/2 p-4 w-full hover:bg-gray-200">
+                        <a href="#" target="_blank" class="block relative rounded overflow-hidden"><img alt="product1" class="object-cover object-center w-full h-full block rounded-lg dark:text-gray-100" src="/assets/images/p5.jpg"/></a>
+                        <div class="mt-4 mb-4">
+                            <a href="#" target="_blank">
+                                <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Category 1</h3>
+                                <h2 class="text-gray-900 dark:text-gray-100 title-font text-lg font-medium">Product Name</h2>
+                                <span class="text-xl dark:text-gray-200">Tk. $50</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Product 6 -->
+                 <div class="xl:w-1/4 md:w-1/2 p-4">
+                    <div class="lg:w-1/4 md:w-1/2 p-4 w-full hover:bg-gray-200">
+                        <a href="#" target="_blank" class="block relative rounded overflow-hidden"><img alt="product1" class="object-cover object-center w-full h-full block rounded-lg dark:text-gray-100" src="/assets/images/p6.jpg"/></a>
+                        <div class="mt-4 mb-4">
+                            <a href="#" target="_blank">
+                                <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Category 1</h3>
+                                <h2 class="text-gray-900 dark:text-gray-100 title-font text-lg font-medium">Product Name</h2>
+                                <span class="text-xl dark:text-gray-200">Tk. $50</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Product 7 -->
+                 <div class="xl:w-1/4 md:w-1/2 p-4">
+                    <div class="lg:w-1/4 md:w-1/2 p-4 w-full hover:bg-gray-200">
+                        <a href="#" target="_blank" class="block relative rounded overflow-hidden"><img alt="product1" class="object-cover object-center w-full h-full block rounded-lg dark:text-gray-100" src="/assets/images/p7.jpg"/></a>
+                        <div class="mt-4 mb-4">
+                            <a href="#" target="_blank">
+                                <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Category 1</h3>
+                                <h2 class="text-gray-900 dark:text-gray-100 title-font text-lg font-medium">Product Name</h2>
+                                <span class="text-xl dark:text-gray-200">Tk. $50</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Product 8 -->
+                 <div class="xl:w-1/4 md:w-1/2 p-4">
+                    <div class="lg:w-1/4 md:w-1/2 p-4 w-full hover:bg-gray-200">
+                        <a href="#" target="_blank" class="block relative rounded overflow-hidden"><img alt="product1" class="object-cover object-center w-full h-full block rounded-lg dark:text-gray-100" src="/assets/images/p8.jpg"/></a>
+                        <div class="mt-4 mb-4">
+                            <a href="#" target="_blank">
+                                <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Category 1</h3>
+                                <h2 class="text-gray-900 dark:text-gray-100 title-font text-lg font-medium">Product Name</h2>
+                                <span class="text-xl dark:text-gray-200">Tk. $50</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+              </div>
+            </div>
+         </section>
+         <!-- Top Popular Product End Here -->
+
+          <section>
+            <div class="container px-5 py-24 mx-auto">
+                <img src="/assets/images/id1-img2.jpg" alt="">
+            </div>           
+          </section>
+
+        <section class="text-gray-600 body-font">
+            <div class="container px-5 py-24 mx-auto">
+                <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
+                <!-- Single -->
+                <div class="p-4 md:w-1/4 flex flex-col text-center items-center">
+                    <div class="inline-flex items-center justify-center text-indigo-500 mb-5 flex-shrink-0">
+                        <svg class="w-12 h-12 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m10.051 8.102-3.778.322-1.994 1.994a.94.94 0 0 0 .533 1.6l2.698.316m8.39 1.617-.322 3.78-1.994 1.994a.94.94 0 0 1-1.595-.533l-.4-2.652m8.166-11.174a1.366 1.366 0 0 0-1.12-1.12c-1.616-.279-4.906-.623-6.38.853-1.671 1.672-5.211 8.015-6.31 10.023a.932.932 0 0 0 .162 1.111l.828.835.833.832a.932.932 0 0 0 1.111.163c2.008-1.102 8.35-4.642 10.021-6.312 1.475-1.478 1.133-4.77.855-6.385Zm-2.961 3.722a1.88 1.88 0 1 1-3.76 0 1.88 1.88 0 0 1 3.76 0Z"/>
+                          </svg>                          
+                    </div>
+                    <div class="flex-grow">
+                    <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Free Shipping</h2>
+                    <p class="leading-relaxed text-[14px]">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium</p>
+                    </div>
+                </div>
+
+                 <!-- Single -->
+                 <div class="p-4 md:w-1/4 flex flex-col text-center items-center">
+                    <div class="inline-flex items-center justify-center text-indigo-500 mb-5 flex-shrink-0">
+                        <svg class="w-12 h-12 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 17.345a4.76 4.76 0 0 0 2.558 1.618c2.274.589 4.512-.446 4.999-2.31.487-1.866-1.273-3.9-3.546-4.49-2.273-.59-4.034-2.623-3.547-4.488.486-1.865 2.724-2.899 4.998-2.31.982.236 1.87.793 2.538 1.592m-3.879 12.171V21m0-18v2.2"/>
+                          </svg>                          
+                    </div>
+                    <div class="flex-grow">
+                    <h2 class="text-gray-900 text-lg title-font font-medium mb-3">30 Days Money Back</h2>
+                    <p class="leading-relaxed text-[14px]">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium</p>
+                    </div>
+                </div>
+
+                 <!-- Single -->
+                 <div class="p-4 md:w-1/4 flex flex-col text-center items-center">
+                    <div class="inline-flex items-center justify-center text-indigo-500 mb-5 flex-shrink-0">
+                        <svg class="w-12 h-12 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.079 6.839a3 3 0 0 0-4.255.1M13 20h1.083A3.916 3.916 0 0 0 18 16.083V9A6 6 0 1 0 6 9v7m7 4v-1a1 1 0 0 0-1-1h-1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1Zm-7-4v-6H5a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h1Zm12-6h1a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2h-1v-6Z"/>
+                          </svg>                          
+                    </div>
+                    <div class="flex-grow">
+                    <h2 class="text-gray-900 text-lg title-font font-medium mb-3">24/7 Help Center</h2>
+                    <p class="leading-relaxed text-[14px]">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium</p>
+                    </div>
+                </div>
+
+                 <!-- Single -->
+                 <div class="p-4 md:w-1/4 flex flex-col text-center items-center">
+                    <div class="inline-flex items-center justify-center text-indigo-500 mb-5 flex-shrink-0">
+                        <svg class="w-12 h-12 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M20 7h-.7c.229-.467.349-.98.351-1.5a3.5 3.5 0 0 0-3.5-3.5c-1.717 0-3.215 1.2-4.331 2.481C10.4 2.842 8.949 2 7.5 2A3.5 3.5 0 0 0 4 5.5c.003.52.123 1.033.351 1.5H4a2 2 0 0 0-2 2v2a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1V9a2 2 0 0 0-2-2Zm-9.942 0H7.5a1.5 1.5 0 0 1 0-3c.9 0 2 .754 3.092 2.122-.219.337-.392.635-.534.878Zm6.1 0h-3.742c.933-1.368 2.371-3 3.739-3a1.5 1.5 0 0 1 0 3h.003ZM13 14h-2v8h2v-8Zm-4 0H4v6a2 2 0 0 0 2 2h3v-8Zm6 0v8h3a2 2 0 0 0 2-2v-6h-5Z"/>
+                          </svg>                          
+                    </div>
+                    <div class="flex-grow">
+                    <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Gift Promotion</h2>
+                    <p class="leading-relaxed text-[14px]">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium</p>
+                    </div>
+                </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Start Here -->
+        <footer class="text-gray-600 body-font">
+            <div class="bg-gray-100">
+              <div class="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
+                <a href="#" class="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-gray-900 lg:items-center lg:justify-center mb-4 md:mb-0">
+                    <img src="/assets/images/logo.png" alt="logo">
+                  </a>
+                <p class="text-sm text-gray-500 sm:ml-6 sm:mt-0 mt-4">© 2025</p>
+                <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+                  <a class="text-gray-500">
+                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                      <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                    </svg>
+                  </a>
+                  <a class="ml-3 text-gray-500">
+                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                      <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                    </svg>
+                  </a>
+                  <a class="ml-3 text-gray-500">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                      <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                      <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                    </svg>
+                  </a>
+                  <a class="ml-3 text-gray-500">
+                    <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                      <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                      <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                    </svg>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </footer>
+        <!-- Footer End Here -->
+
+     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+  </body>
+</html>
