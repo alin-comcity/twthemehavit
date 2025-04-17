@@ -61,330 +61,328 @@
     </header>
     <!-- Navbar end here -->
 
-    <!-- Product start here -->
-    <div class="py-6">
-      <div class="container mx-auto px-4 sm:px-6 lg:px-8 mt-6">
-        <div class="flex flex-col md:flex-row -mx-4">
-          <div class="md:flex-1 px-8">
-            <div>
-              <div class="flex justify-center">
+    <!-- New try start here -->
+    <div class="container mx-auto">
+      <div class="grid grid-cols-3 gap-4">
+        <div class="col-span-2">
+          <div class="flex flex-col md:flex-row -mx-4">
+            <div class="md:flex-1 px-8">
+              <div>
+                <div class="flex justify-center">
+                  <a
+                    href="#"
+                    class="aspect-square flex rounded-md overflow-hidden hover:opacity-80 transition-opacity mb-5"
+                    x-data="{ url: './assets/images/id1-img2.jpg', thumb: './assets/images/p1.jpg' }"
+                    x-lightbox="url"
+                  >
+                    <img
+                      class="h-64 md:h-80 rounded-lg mb-4 flex items-center justify-center"
+                      :src="thumb"
+                      alt=""
+                    />
+                  </a>
+                </div>
+
+                <div class="flex -mx-2 mb-4">
+                  <div class="flex-1 px-2">
+                    <a
+                      href="#"
+                      class="aspect-square flex rounded-md overflow-hidden hover:opacity-80 transition-opacity"
+                      x-data="{ url: './assets/images/id1-img2.jpg', thumb: './assets/images/p1.jpg' }"
+                      x-lightbox="url"
+                    >
+                      <img
+                        class="focus:outline-none w-full rounded-lg h-24 md:h-32 bg-gray-100 flex items-center justify-center"
+                        :src="thumb"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="flex-1 px-2">
+                    <a
+                      href="#"
+                      class="aspect-square flex rounded-md overflow-hidden hover:opacity-80 transition-opacity"
+                      x-data="{ url: './assets/images/id1-img2.jpg', thumb: './assets/images/p5.jpg' }"
+                      x-lightbox="url"
+                    >
+                      <img
+                        class="focus:outline-none w-full rounded-lg h-24 md:h-32 bg-gray-100 flex items-center justify-center"
+                        :src="thumb"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="flex-1 px-2">
+                    <a
+                      href="#"
+                      class="aspect-square flex rounded-md overflow-hidden hover:opacity-80 transition-opacity"
+                      x-data="{ url: './assets/images/id1-img2.jpg', thumb: './assets/images/p2.jpg' }"
+                      x-lightbox="url"
+                    >
+                      <img
+                        class="focus:outline-none w-full rounded-lg h-24 md:h-32 bg-gray-100 flex items-center justify-center"
+                        :src="thumb"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="flex-1 px-2">
+                    <a
+                      href="#"
+                      class="aspect-square flex rounded-md overflow-hidden hover:opacity-80 transition-opacity"
+                      x-data="{ url: './assets/images/id1-img2.jpg', thumb: './assets/images/p1.jpg' }"
+                      x-lightbox="url"
+                    >
+                      <img
+                        class="focus:outline-none w-full rounded-lg h-24 md:h-32 bg-gray-100 flex items-center justify-center"
+                        :src="thumb"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="md:flex-1 px-8">
+              <h1 class="font-bold uppercase text-2xl mb-5">
+                Mens's Ragged <br />Waterproof Jacket
+              </h1>
+              <p class="text-sm mb-5">
+                Lorem ipsum dolor sit, amet consectetur adipisicing, elit. Eos,
+                voluptatum dolorum! Laborum blanditiis consequatur, voluptates,
+                sint enim fugiat saepe, dolor fugit, magnam explicabo eaque quas
+                id quo porro dolorum facilis...
                 <a
                   href="#"
-                  class="aspect-square flex rounded-md overflow-hidden hover:opacity-80 transition-opacity mb-5"
-                  x-data="{ url: './assets/images/id1-img2.jpg', thumb: './assets/images/p1.jpg' }"
-                  x-lightbox="url"
-                >
-                  <img
-                    class="h-64 md:h-80 rounded-lg mb-4 flex items-center justify-center"
-                    :src="thumb"
-                    alt=""
-                  />
-                </a>
+                  class="opacity-50 text-gray-900 hover:opacity-100 inline-block text-xs leading-none border-b border-gray-900"
+                  >MORE <i class="mdi mdi-arrow-right"></i
+                ></a>
+              </p>
+
+              <div class="flex items-center space-x-4 my-4">
+                <div>
+                  <div class="rounded-lg bg-gray-100 flex py-2 px-3">
+                    <span class="text-indigo-400 mr-1 mt-1">$</span>
+                    <span class="font-bold text-indigo-600 text-3xl">25</span>
+                  </div>
+                </div>
+                <div class="flex-1">
+                  <p class="text-green-500 text-xl font-semibold">Save 12%</p>
+                  <p class="text-gray-400 text-sm">Inclusive of all Taxes.</p>
+                </div>
               </div>
 
-              <div class="flex -mx-2 mb-4">
-                <div class="flex-1 px-2">
-                  <a
-                    href="#"
-                    class="aspect-square flex rounded-md overflow-hidden hover:opacity-80 transition-opacity"
-                    x-data="{ url: './assets/images/id1-img2.jpg', thumb: './assets/images/p1.jpg' }"
-                    x-lightbox="url"
+              <div class="flex py-4 space-x-4">
+                <div class="relative">
+                  <div
+                    class="text-center left-0 pt-2 right-0 absolute text-xs uppercase text-gray-400 font-semibold"
                   >
-                    <img
-                      class="focus:outline-none w-full rounded-lg h-24 md:h-32 bg-gray-100 flex items-center justify-center"
-                      :src="thumb"
-                      alt=""
-                    />
-                  </a>
-                </div>
-                <div class="flex-1 px-2">
-                  <a
-                    href="#"
-                    class="aspect-square flex rounded-md overflow-hidden hover:opacity-80 transition-opacity"
-                    x-data="{ url: './assets/images/id1-img2.jpg', thumb: './assets/images/p5.jpg' }"
-                    x-lightbox="url"
+                    Qty
+                  </div>
+                  <select
+                    class="cursor-pointer rounded-sm border border-gray-200 h-20 w-20 flex text-center p-0"
                   >
-                    <img
-                      class="focus:outline-none w-full rounded-lg h-24 md:h-32 bg-gray-100 flex items-center justify-center"
-                      :src="thumb"
-                      alt=""
-                    />
-                  </a>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
                 </div>
-                <div class="flex-1 px-2">
-                  <a
-                    href="#"
-                    class="aspect-square flex rounded-md overflow-hidden hover:opacity-80 transition-opacity"
-                    x-data="{ url: './assets/images/id1-img2.jpg', thumb: './assets/images/p2.jpg' }"
-                    x-lightbox="url"
-                  >
-                    <img
-                      class="focus:outline-none w-full rounded-lg h-24 md:h-32 bg-gray-100 flex items-center justify-center"
-                      :src="thumb"
-                      alt=""
-                    />
-                  </a>
-                </div>
-                <div class="flex-1 px-2">
-                  <a
-                    href="#"
-                    class="aspect-square flex rounded-md overflow-hidden hover:opacity-80 transition-opacity"
-                    x-data="{ url: './assets/images/id1-img2.jpg', thumb: './assets/images/p1.jpg' }"
-                    x-lightbox="url"
-                  >
-                    <img
-                      class="focus:outline-none w-full rounded-lg h-24 md:h-32 bg-gray-100 flex items-center justify-center"
-                      :src="thumb"
-                      alt=""
-                    />
-                  </a>
-                </div>
+
+                <button
+                  type="button"
+                  class="px-8 py-2 font-semibold bg-gray-800 hover:bg-red-500 text-white"
+                >
+                  Add to Cart
+                </button>
               </div>
             </div>
           </div>
-          <div class="md:flex-1 px-8">
-            <h1 class="font-bold uppercase text-2xl mb-5">
-              Mens's Ragged <br />Waterproof Jacket
-            </h1>
-            <p class="text-sm mb-5">
-              Lorem ipsum dolor sit, amet consectetur adipisicing, elit. Eos,
-              voluptatum dolorum! Laborum blanditiis consequatur, voluptates,
-              sint enim fugiat saepe, dolor fugit, magnam explicabo eaque quas
-              id quo porro dolorum facilis...
-              <a
-                href="#"
-                class="opacity-50 text-gray-900 hover:opacity-100 inline-block text-xs leading-none border-b border-gray-900"
-                >MORE <i class="mdi mdi-arrow-right"></i
-              ></a>
-            </p>
 
-            <div class="flex items-center space-x-4 my-4">
-              <div>
-                <div class="rounded-lg bg-gray-100 flex py-2 px-3">
-                  <span class="text-indigo-400 mr-1 mt-1">$</span>
-                  <span class="font-bold text-indigo-600 text-3xl">25</span>
-                </div>
-              </div>
-              <div class="flex-1">
-                <p class="text-green-500 text-xl font-semibold">Save 12%</p>
-                <p class="text-gray-400 text-sm">Inclusive of all Taxes.</p>
-              </div>
-            </div>
-
-            <div class="flex py-4 space-x-4">
-              <div class="relative">
-                <div
-                  class="text-center left-0 pt-2 right-0 absolute text-xs uppercase text-gray-400 font-semibold"
-                >
-                  Qty
-                </div>
-                <select
-                  class="cursor-pointer rounded-sm border border-gray-200 h-20 w-20 flex text-center p-0"
-                >
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
-                </select>
-              </div>
-
-              <button
-                type="button"
-                class="px-8 py-2 font-semibold bg-gray-800 hover:bg-indigo-500 text-white"
+          <!-- Product specification start here -->
+          <div class="mt-16">
+            <!-- Tab title start here -->
+            <div class="mb-4">
+              <ul
+                class="flex flex-wrap -mb-px text-sm font-medium text-center"
+                id="default-styled-tab"
+                data-tabs-toggle="#default-styled-tab-content"
+                data-tabs-active-classes="bg-red-600 text-white"
+                data-tabs-inactive-classes="bg-white text-red-600"
+                role="tablist"
               >
-                Add to Cart
-              </button>
+                <li class="me-2" role="presentation">
+                  <button
+                    class="inline-block p-4 font-bold uppercase px-5 py-3 shadow-lg block leading-normal text-pink-600 bg-white"
+                    id="description-styled-tab"
+                    data-tabs-target="#styled-description"
+                    type="button"
+                    role="tab"
+                    aria-controls="description"
+                    aria-selected="false"
+                  >
+                    Description
+                  </button>
+                </li>
+                <li class="me-2" role="presentation">
+                  <button
+                    class="inline-block p-4 font-bold uppercase px-5 py-3 shadow-lg block leading-normal text-white bg-pink-600"
+                    id="specification-styled-tab"
+                    data-tabs-target="#styled-specification"
+                    type="button"
+                    role="tab"
+                    aria-controls="specification"
+                    aria-selected="false"
+                  >
+                    Specification
+                  </button>
+                </li>
+                <li class="me-2" role="presentation">
+                  <button
+                    class="inline-block p-4 font-bold uppercase px-5 py-3 shadow-lg block leading-normal text-white bg-pink-600"
+                    id="download-styled-tab"
+                    data-tabs-target="#styled-download"
+                    type="button"
+                    role="tab"
+                    aria-controls="download"
+                    aria-selected="false"
+                  >
+                    Download
+                  </button>
+                </li>
+              </ul>
             </div>
-          </div>
+            <!-- Tab title end here -->
 
-          <div class="md:flex-1 px-8">
-            <!-- Related products start here -->
-            <div class="mt-16">
-              <h3 class="text-gray-600 text-2xl font-medium">
-                Related Products
-              </h3>
+            <!-- Tab content start here -->
+            <div id="default-styled-tab-content">
               <div
-                class="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 mt-6"
+                class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800"
+                id="styled-description"
+                role="tabpanel"
+                aria-labelledby="description-tab"
+              >
+                <p class="text-sm text-gray-500 dark:text-gray-400">
+                  This is some placeholder content the
+                  <strong class="font-medium text-gray-800 dark:text-white"
+                    >Profile tab's associated content</strong
+                  >. Clicking another tab will toggle the visibility of this one
+                  for the next. The tab JavaScript swaps classes to control the
+                  content visibility and styling.
+                </p>
+              </div>
+              <div
+                class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800"
+                id="styled-specification"
+                role="tabpanel"
+                aria-labelledby="specification-tab"
+              >
+                <p class="text-sm text-gray-500 dark:text-gray-400">
+                  Model Model： CP2100DW Print Specification Print
+                  speed(A4/LTR): A4：20ppm、LTR：21ppm Duplex print speed:
+                  A4/LTR：6ppm First print out time: Mono：10s、Color：12s
+                  Printer language: GDI Processor speed: 500MHz Memory: DDR3L
+                  512MB Hard disk: SPI NAND 128MB
+                </p>
+              </div>
+              <div
+                class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800"
+                id="styled-download"
+                role="tabpanel"
+                aria-labelledby="download-tab"
+              >
+                <p class="text-sm text-gray-500 dark:text-gray-400">
+                  This is some placeholder content the
+                  <strong class="font-medium text-gray-800 dark:text-white"
+                    >Settings tab's associated content</strong
+                  >. Clicking another tab will toggle the visibility of this one
+                  for the next. The tab JavaScript swaps classes to control the
+                  content visibility and styling.
+                </p>
+              </div>
+            </div>
+            <!-- Tab content end here -->
+          </div>
+          <!-- Product specification end here -->
+        </div>
+        <div class="col-span-1">
+          <!-- Related products start here -->
+          <div class="mt-8">
+            <h3 class="text-gray-600 text-2xl font-medium">Related Products</h3>
+            <div class="grid grid-cols-1 mt-6">
+              <div
+                class="w-full max-w-sm mx-auto rounded-md shadow-md overflow-hidden"
               >
                 <div
-                  class="w-full max-w-sm mx-auto rounded-md shadow-md overflow-hidden"
+                  class="flex items-end justify-end h-56 w-full bg-cover"
+                  style="
+                    background-image: url('https://images.unsplash.com/photo-1563170351-be82bc888aa4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=376&q=80');
+                  "
                 >
-                  <div
-                    class="flex items-end justify-end h-56 w-full bg-cover"
-                    style="
-                      background-image: url('https://images.unsplash.com/photo-1563170351-be82bc888aa4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=376&q=80');
-                    "
+                  <button
+                    class="p-2 rounded-full bg-blue-600 text-white mx-5 -mb-4 hover:bg-blue-500 focus:outline-none focus:bg-blue-500"
                   >
-                    <button
-                      class="p-2 rounded-full bg-blue-600 text-white mx-5 -mb-4 hover:bg-blue-500 focus:outline-none focus:bg-blue-500"
+                    <svg
+                      class="h-5 w-5"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
                     >
-                      <svg
-                        class="h-5 w-5"
-                        fill="none"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                      >
-                        <path
-                          d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
-                        ></path>
-                      </svg>
-                    </button>
-                  </div>
-                  <div class="px-5 py-3">
-                    <h3 class="text-gray-700 uppercase">Chanel</h3>
-                    <span class="text-gray-500 mt-2">$12</span>
-                  </div>
+                      <path
+                        d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                      ></path>
+                    </svg>
+                  </button>
                 </div>
+                <div class="px-5 py-3">
+                  <h3 class="text-gray-700 uppercase">Chanel</h3>
+                  <span class="text-gray-500 mt-2">$12</span>
+                </div>
+              </div>
+
+              <div
+                class="w-full max-w-sm mx-auto rounded-md shadow-md overflow-hidden"
+              >
                 <div
-                  class="w-full max-w-sm mx-auto rounded-md shadow-md overflow-hidden"
+                  class="flex items-end justify-end h-56 w-full bg-cover"
+                  style="
+                    background-image: url('https://images.unsplash.com/photo-1563170351-be82bc888aa4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=376&q=80');
+                  "
                 >
-                  <div
-                    class="flex items-end justify-end h-56 w-full bg-cover"
-                    style="
-                      background-image: url('https://images.unsplash.com/photo-1544441893-675973e31985?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80');
-                    "
+                  <button
+                    class="p-2 rounded-full bg-blue-600 text-white mx-5 -mb-4 hover:bg-blue-500 focus:outline-none focus:bg-blue-500"
                   >
-                    <button
-                      class="p-2 rounded-full bg-blue-600 text-white mx-5 -mb-4 hover:bg-blue-500 focus:outline-none focus:bg-blue-500"
+                    <svg
+                      class="h-5 w-5"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
                     >
-                      <svg
-                        class="h-5 w-5"
-                        fill="none"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                      >
-                        <path
-                          d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
-                        ></path>
-                      </svg>
-                    </button>
-                  </div>
-                  <div class="px-5 py-3">
-                    <h3 class="text-gray-700 uppercase">Man Mix</h3>
-                    <span class="text-gray-500 mt-2">$12</span>
-                  </div>
+                      <path
+                        d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                      ></path>
+                    </svg>
+                  </button>
+                </div>
+                <div class="px-5 py-3">
+                  <h3 class="text-gray-700 uppercase">Chanel</h3>
+                  <span class="text-gray-500 mt-2">$12</span>
                 </div>
               </div>
             </div>
-            <!-- Related products end  here -->
           </div>
+          <!-- Related products end  here -->
         </div>
-
-        <!-- Product specification start here -->
-        <div class="mt-16">
-          <!-- Tab title start here -->
-          <div class="mb-4">
-            <ul
-              class="flex flex-wrap -mb-px text-sm font-medium text-center"
-              id="default-styled-tab"
-              data-tabs-toggle="#default-styled-tab-content"
-              data-tabs-active-classes="bg-red-600 text-white"
-              data-tabs-inactive-classes="bg-white text-red-600"
-              role="tablist"
-            >
-              <li class="me-2" role="presentation">
-                <button
-                  class="inline-block p-4 font-bold uppercase px-5 py-3 shadow-lg block leading-normal text-pink-600 bg-white"
-                  id="description-styled-tab"
-                  data-tabs-target="#styled-description"
-                  type="button"
-                  role="tab"
-                  aria-controls="description"
-                  aria-selected="false"
-                >
-                  Description
-                </button>
-              </li>
-              <li class="me-2" role="presentation">
-                <button
-                  class="inline-block p-4 font-bold uppercase px-5 py-3 shadow-lg block leading-normal text-white bg-pink-600"
-                  id="specification-styled-tab"
-                  data-tabs-target="#styled-specification"
-                  type="button"
-                  role="tab"
-                  aria-controls="specification"
-                  aria-selected="false"
-                >
-                  Specification
-                </button>
-              </li>
-              <li class="me-2" role="presentation">
-                <button
-                  class="inline-block p-4 font-bold uppercase px-5 py-3 shadow-lg block leading-normal text-white bg-pink-600"
-                  id="download-styled-tab"
-                  data-tabs-target="#styled-download"
-                  type="button"
-                  role="tab"
-                  aria-controls="download"
-                  aria-selected="false"
-                >
-                  Download
-                </button>
-              </li>
-            </ul>
-          </div>
-          <!-- Tab title end here -->
-
-          <!-- Tab content start here -->
-          <div id="default-styled-tab-content">
-            <div
-              class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800"
-              id="styled-description"
-              role="tabpanel"
-              aria-labelledby="description-tab"
-            >
-              <p class="text-sm text-gray-500 dark:text-gray-400">
-                This is some placeholder content the
-                <strong class="font-medium text-gray-800 dark:text-white"
-                  >Profile tab's associated content</strong
-                >. Clicking another tab will toggle the visibility of this one
-                for the next. The tab JavaScript swaps classes to control the
-                content visibility and styling.
-              </p>
-            </div>
-            <div
-              class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800"
-              id="styled-specification"
-              role="tabpanel"
-              aria-labelledby="specification-tab"
-            >
-              <p class="text-sm text-gray-500 dark:text-gray-400">
-                Model Model： CP2100DW Print Specification Print speed(A4/LTR):
-                A4：20ppm、LTR：21ppm Duplex print speed: A4/LTR：6ppm First
-                print out time: Mono：10s、Color：12s Printer language: GDI
-                Processor speed: 500MHz Memory: DDR3L 512MB Hard disk: SPI NAND
-                128MB
-              </p>
-            </div>
-            <div
-              class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800"
-              id="styled-download"
-              role="tabpanel"
-              aria-labelledby="download-tab"
-            >
-              <p class="text-sm text-gray-500 dark:text-gray-400">
-                This is some placeholder content the
-                <strong class="font-medium text-gray-800 dark:text-white"
-                  >Settings tab's associated content</strong
-                >. Clicking another tab will toggle the visibility of this one
-                for the next. The tab JavaScript swaps classes to control the
-                content visibility and styling.
-              </p>
-            </div>
-          </div>
-          <!-- Tab content end here -->
-        </div>
-        <!-- Product specification end here -->
       </div>
     </div>
-    <!-- Product end here -->
+    <!-- New try end here -->
 
     <!-- Footer Start Here -->
     <footer class="text-gray-600 body-font">
